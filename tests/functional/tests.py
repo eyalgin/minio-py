@@ -215,7 +215,7 @@ def test_negative_make_bucket_invalid_name(  # pylint: disable=invalid-name
     invalid_bucket_name_list = [
         bucket_name + '.',
         '.' + bucket_name,
-        bucket_name + '...abcd'
+        bucket_name + '...abcd_lalala'
     ]
     for name in invalid_bucket_name_list:
         log_entry["args"]["bucket_name"] = name
